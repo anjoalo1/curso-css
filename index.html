@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    
+<link rel="stylesheet" href="/styles/prism_css/prism.css">
+    <link rel="stylesheet" href="styles/stylemain.css">
+    
+    <title>Document</title>
+</head>
+<body>
+<div class="header-main">
+
+  <header class="header-from">
+   
+      <ul class="nav-header">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      
+      <div>
+        <input type="button" value="dia">
+      </div>
+
+
+  </header>
+
+
+  
+</div>
+
+
+
+<div class="container-page-main">
+
+  <aside class="aside-left">
+    <div class="container-aside-left">
+      <ul>
+        <li>
+          <details open>
+            <summary>
+              INICIANDO
+            </summary>
+              <ul>
+                <li><a href="/pages/selectors.html">Sintaxis Basica</a></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+          </details>
+
+        </li>
+        <li>
+          <details>
+            <summary>
+              Get Started
+            </summary>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              Get Started
+            </summary>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              Get Started
+            </summary>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              Get Started
+            </summary>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+          </details>
+        </li>
+       
+      </ul>
+          
+         
+          
+          
+          
+      
+      </div>
+    </aside>
+    
+    <main class="container-main">
+      <div class="container-article-main">
+        
+        <article class="article-main">
+
+          <h1 class="title-course">CURSO CSS</h1>
+          
+          <h2 class="title-h2">Que es css?</h2>
+          <p class="parrafo">CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación y el aspecto visual de un documento HTML o XML. Es una tecnología fundamental en el desarrollo web y permite controlar la apariencia de los elementos en una página web, como el color de fondo, el tamaño de la fuente, la disposición de los elementos, los márgenes, el espaciado y muchos otros aspectos visuales.</p>
+          
+        <p class="parrafo">
+          CSS trabaja en conjunto con HTML para separar la estructura y el contenido de un documento web de su estilo. Mientras que HTML se encarga de definir los elementos y la estructura de una página web, CSS se utiliza para aplicar estilos y diseñar cómo se mostrarán esos elementos en la pantalla.</p>
+
+          <h2>Como lo agrego a mi proyecto</h2>
+
+          <p class="parrafo">En el proyecto donde tengas tu codigo html, por lo general creas una carpeta nueva de nombre styles, dentro de esta carpeta crear un archivo de extension css.</p>
+          <div class="image-initial">
+
+            <img  src="assets/agregar_archivo_css.PNG" height="200px">
+          </div>
+
+          <p class="parrafo">Para agregar CSS a un proyecto web, puedes seguir estos pasos generales:</p>
+          <p class="parrafo">    Crear un archivo CSS: Primero, crea un archivo CSS separado con extensión ".css". Puedes nombrarlo como desees, por ejemplo, "style.css". Este archivo contendrá todas las reglas y estilos que deseas aplicar a tu proyecto.
+            
+          </p>
+            
+          <p class="parrafo">
+            Vincular el archivo CSS: Abre tu archivo HTML en un editor de texto y agrega una etiqueta <link> en la sección <head>. Dentro de la etiqueta <link>, establece el atributo "href" para apuntar al archivo CSS que creaste en el paso anterior. Por ejemplo:
+          </p>
+
+
+              <p class="parrafo">
+                Asegúrate de que el atributo "href" apunte correctamente al archivo CSS y esté en la misma ubicación o ruta relativa adecuada.
+              </p>
+
+          <div class="code-only">
+            <pre class="pre-code">
+              <code  class="language-html line-numbers" data-previewers="color time">
+                &lt;html&gt;
+                  &lt;head&gt;
+                  &lt;!-- href ="aqui entre las se coloca la ruta del archivo" --&gt;
+                    &lt;link rel="stylesheet" href="styles/style.css"&gt; 
+                  &lt;/head&gt;
+                  &lt;body&gt;
+    
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </html>
+              </code>
+            </pre>
+          </div>
+
+        
+
+
+
+          </article>
+
+
+          <footer>
+
+          </footer>
+          
+        </div>
+
+        
+        
+
+          
+        <footer>
+        <div class="container-footer-main">
+
+
+          <div class="item-footer-main">
+            <p class="p-footer-main">item 1</p>
+            <p class="p-footer-main">item 2</p>
+            <p class="p-footer-main">item 3</p>
+            <p class="p-footer-main">item 4</p>
+            <p class="p-footer-main">item 5</p>
+            <p class="p-footer-main">item 6</p>
+          </div>
+
+          <div class="item-footer-main">
+            <p class="p-footer-main">item 1</p>
+            <p class="p-footer-main">item 2</p>
+            <p class="p-footer-main">item 3</p>
+            <p class="p-footer-main">item 4</p>
+            <p class="p-footer-main">item 5</p>
+            <p class="p-footer-main">item 6</p>
+          </div>
+
+          <div class="item-footer-main">
+            <p class="p-footer-main">item 1</p>
+            <p class="p-footer-main">item 2</p>
+            <p class="p-footer-main">item 3</p>
+            <p class="p-footer-main">item 4</p>
+            <p class="p-footer-main">item 5</p>
+            <p class="p-footer-main">item 6</p>
+          </div>
+
+
+        </div> 
+      </footer>
+    </main>
+  
+     <!--  <aside class="aside-right">
+        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam error tempora fugiat. Ullam totam debitis maxime qui dolore voluptatibus dolor odio ut deserunt, eum provident voluptates amet earum perferendis.</p>
+      </aside> -->
+  
+  
+
+    </div>
+    
+    
+    
+    
+    
+  
+    <script src="/js/prism_js/prism.js"></script>
+</body>
+</html>
