@@ -16,9 +16,9 @@ body{
 
 .header-main{
     position: fixed;
-    display: block;
+    /* display: block; */
     color: aliceblue;
-    width: 100%;
+    width: 100vw;
     height: 100px;
    top: 0;
 
@@ -34,7 +34,7 @@ body{
     justify-content: space-around;
     align-items: center;
     /* height: 40px; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     
 }
 
@@ -59,17 +59,12 @@ body{
 
 .container-page-main{
     display: grid;
-    width: 100%;
-    grid-template-columns: 20vw minmax(20vw, max-content);
+    width: auto;
+    grid-template-columns: 260px minmax(20vw, max-content);
     grid-template-rows: auto;
     color: aliceblue;
+
     margin-top: 100px;
-    
-    
-    /* border: 1px white solid; */
-    /* top: 10vw; */
-    /* ff 3.6+ */
-    
     background: rgb(42,27,54);
     background: radial-gradient(circle, rgba(42,27,54,1) 100%, rgba(88,21,113,0.695098107602416) 100%);
     
@@ -78,47 +73,42 @@ body{
 
 .aside-left{
     position:fixed;
-    width: 20vw;
+     width: 250px; 
     color: aliceblue;
     overflow: auto;
-    height: 90%;
-    /* margin-top: 80px; */
+    height: 90vh;
     padding-top: 50px; 
-
+    grid-column: 1/2;
     margin-bottom: 50px;
-    /* border-top: 1px solid white; */
-    /* border-bottom: 1px solid white; */
+   
 }
 
 
 
 .container-main{
+    
     grid-column: 2/3;
     margin-top: 60px;
-    padding-left: 40px;
-    padding-right: 40px;  
+    
+    /* padding-left: 10px; */
+    padding-right: 20px;  
 }
 
 
 @media screen and (max-width:700px) {
     .aside-left{
-        position: relative;
-        width: 0%;
-        transform: translate(0, -40px);
-        visibility: hidden;
         display: none;
-
     }
 
     .container-page-main{
         display: grid;
-        width: 100%;
-        grid-template-columns: 350px;
+     /* width: 100vw; */
+        grid-template-columns: 90vw;
         grid-template-rows: auto; 
         justify-content: center;
     }
     .container-main{
-        width: 100%;
+        width: 90vw;
         grid-column: 1/2;
         padding-left: 0;
     padding-right: 0;
@@ -171,13 +161,14 @@ footer{
 
 .code-only{
    
-    margin: 40px 0;
-min-width: 300px;
-    max-width: 700px;
+   
+min-width: 270px;
+    max-width: 1000px;
 }
 
 .image-initial{
-    min-width: 300px;
+    
+    min-width: 270px;
     max-width: 700px; 
     overflow-x: auto; 
 }
