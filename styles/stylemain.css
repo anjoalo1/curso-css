@@ -95,8 +95,11 @@ body{
     
     /* padding-left: 10px; */
     padding-right: 20px;
+    padding-left: 5vw;
       
 }
+
+
 
 
 @media screen and (max-width:700px) {
@@ -171,7 +174,7 @@ min-width: 270px;
 }
 
 .image-initial{
-    
+    margin-top: 20px;
     min-width: 270px;
     max-width: 700px; 
     overflow-x: auto; 
