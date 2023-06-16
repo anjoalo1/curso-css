@@ -53,11 +53,13 @@
               INICIANDO
             </summary>
               <ul>
-                <li><a href="/pages/selectors.html">Sintaxis Basica</a></li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li><a href="#css">Que es CSS</a></li>
+                <li><a href="#agregar-proyecto">Como lo agrego a mi proyecto</a>
+                </li>
+                <li>
+                  <a href="#esctructura">Esctructura CSS
+                  </a>
+                </li>
               </ul>
           </details>
 
@@ -158,21 +160,21 @@
       <div class="container-article-main">
         
         <article class="article-main">
-
-          <h1 class="title-course">CURSO CSS</h1>
+          <a name="css"></a>
+          <h1 class="title-course" >CURSO CSS</h1>
           
           <h2 class="title-h2">Que es css?</h2>
           <p class="parrafo">CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación y el aspecto visual de un documento HTML o XML. Es una tecnología fundamental en el desarrollo web y permite controlar la apariencia de los elementos en una página web, como el color de fondo, el tamaño de la fuente, la disposición de los elementos, los márgenes, el espaciado y muchos otros aspectos visuales.</p>
           
         <p class="parrafo">
           CSS trabaja en conjunto con HTML para separar la estructura y el contenido de un documento web de su estilo. Mientras que HTML se encarga de definir los elementos y la estructura de una página web, CSS se utiliza para aplicar estilos y diseñar cómo se mostrarán esos elementos en la pantalla.</p>
-
+          <a name="agregar-proyecto"></a>
           <h2>Como lo agrego a mi proyecto</h2>
 
           <p class="parrafo">En el proyecto donde tengas tu codigo html, por lo general creas una carpeta nueva de nombre styles, dentro de esta carpeta crear un archivo de extension css.</p>
           <div class="image-initial">
 
-            <img  src="assets/agregar_archivo_css.PNG" height="200px">
+            <img  src="assets/agregar_archivo_css.jpg" height="380px">
           </div>
 
           <p class="parrafo">Para agregar CSS a un proyecto web, puedes seguir estos pasos generales:</p>
@@ -206,9 +208,79 @@
             </pre>
           </div>
 
-        
+          <a name="esctructura"></a>
+          <h2 class="title-h2">Esctructura CSS</h2>
+          <p class="parrafo">Las reglas CSS se utilizan para aplicar estilos a los elementos HTML en una página web. Cada regla CSS consta de dos partes principales: un selector y un bloque de declaración. Aquí tienes la estructura básica de una regla CSS:</p>
 
+          <div class="image-initial">
+            <img  src="assets/estructura_css.JPG" height="300px">
+          </div>
+            
 
+          <p class="parrafo">
+            <span class="resaltar">Selector:</span> El selector apunta a los elementos HTML a los que se aplicarán los estilos. Puede ser el nombre de un elemento, una clase, un identificador, un atributo o incluso una combinación de ellos. Aquí tienes algunos ejemplos:</p>
+
+            <ul>
+              <li>Nombre de elemento: <span class="resaltar">p</span> selecciona todos los elementos
+                <span class="resaltar">&lt;p&gt;</span>.
+              </li>
+              <li>
+                Clase: <span class="resaltar">.clase</span> selecciona todos los elementos con la clase CSS <span class="resaltar">"clase"</span>.
+                
+              </li>
+              <li>
+                Identificador: #id selecciona el elemento con el identificador CSS <span class="resaltar">"id"</span>.
+              </li>
+            </ul>
+
+      
+          
+
+          <p class="parrafo">
+            Bloque de declaración: El bloque de declaración está contenido entre llaves <span class="resaltar">{ }</span> y contiene una o más declaraciones separadas por punto y coma <span class="resaltar">;</span>. Cada declaración consta de una propiedad y su valor, separados por dos puntos <span class="resaltar">:</span>.
+            Aquí tienes un ejemplo:
+          </p>
+
+          <div class="code-only">
+            <pre class="pre-code">
+              <code  class="language-css line-numbers" data-previewers="color time">
+                selector {
+                  propiedad1: valor1;
+                  propiedad2: valor2;
+                }
+              </code>
+            </pre>
+          </div>
+
+          <p class="parrafo">
+            Las propiedades representan los aspectos que deseas cambiar, como el color del texto, el tamaño de la fuente, el margen, el fondo, etc. Los valores son los ajustes específicos que deseas aplicar a esas propiedades, como "rojo" para el color del texto, "14px" para el tamaño de la fuente, etc.
+          </p>
+
+          <p class="parrafo">
+            Por ejemplo:
+          </p>
+
+          <div class="code-only">
+            <pre class="pre-code">
+              <code  class="language-css line-numbers" data-previewers="color time">
+                p {
+                  color: red;
+                  font-size: 14px;
+                  margin-top: 10px;
+                }
+                
+              </code>
+            </pre>
+          </div>
+
+         
+        <p class="parrafo">
+          En este caso, se aplicarían los estilos a todos los elementos <span class="resaltar">&lt;p&gt;</span>, estableciendo el color del texto en rojo, el tamaño de la fuente en 14 píxeles y el margen superior en 10 píxeles.
+        </p>
+
+        <p class="parrafo">
+          Recuerda que esta es solo una estructura básica, y CSS ofrece muchas más opciones y propiedades para personalizar los estilos de tus elementos HTML.
+        </p>
 
           </article>
 
