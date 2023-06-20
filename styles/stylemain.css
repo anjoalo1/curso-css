@@ -36,7 +36,7 @@ body{
     justify-content: space-around;
     align-items: center;
     /* height: 40px; */
-    /* margin-top: 10px; */
+    margin-top: 20px; 
     
 }
 
@@ -82,10 +82,71 @@ body{
     height: 90vh;
     padding-top: 50px; 
     grid-column: 1/2;
-    margin-bottom: 50px;
-   
+
+    
 }
 
+/* .container-aside-left{
+    background-color: rgb(39, 37, 46);
+
+    padding-bottom: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+} 
+*/
+
+.container-top{
+    background-color: rgb(56, 30, 142);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+}
+
+.ul-level-1{
+    padding-left: 17px;
+    list-style-type: none;
+}
+
+.ul-aside-left{
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 17px;
+}
+
+.ul-aside-left > li{
+   margin: 20px;
+
+}
+
+.ul-aside-left > li:hover{
+    background-color: rgb(58, 54, 52);
+}
+
+.li-left > a{
+    color: aliceblue;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+
+.summary-left{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(209, 219, 227);
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.summary-class{
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+}
 
 
 .container-main{
@@ -134,7 +195,10 @@ body{
 }
 
 .title-h2{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
 }
 
 .container-footer-main{
@@ -147,8 +211,6 @@ body{
 /* .item-footer-main{
 border: 1px solid black;
 } */
-
-
 
 /*barra right*/
 
@@ -191,16 +253,56 @@ min-width: 270px;
 .parrafo{
     letter-spacing: 0.8px;
     word-spacing: 1px;
-    line-height: 25px;
+    line-height: 2rem;
     margin-top: 40px;
     margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .resaltar{
-    color: rgb(169, 79, 40);
+    color: rgb(218, 57, 92);
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.8px;
     word-spacing: 1px;
     line-height: 30px;
+}
+
+.ul-parrafos{
+   font-size: 1rem;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    line-height: 30px; 
+    margin: 20px 0;
+}
+
+.li-parrafos{
+   font-size: 1rem;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    line-height: 30px;
+    margin: 8px 0; 
+}
+
+.remove-aside-left{
+    display: none;
+}
+
+.add-container-main{
+    width: 90vw;
+    grid-column: 1/2;
+    padding-left: 0;
+padding-right: 0
+}
+
+
+.add-container-page-main{
+    display: grid;
+ /* width: 100vw; */
+    grid-template-columns: 90vw;
+    grid-template-rows: auto; 
+    justify-content: center;
+    margin-top: 100px;
+    background: rgb(42,27,54);
+    background: radial-gradient(circle, rgba(42,27,54,1) 100%, rgba(88,21,113,0.695098107602416) 100%);
 }

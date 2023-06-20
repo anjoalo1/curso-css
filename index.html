@@ -19,6 +19,9 @@
 <div class="header-main">
 
   <header class="header-from">
+    <div class="burger-icon" id="burger-icon">
+      <img src="./assets/burger_svg.svg" height="40px">
+    </div>
    
       <ul class="nav-header">
         <li>1</li>
@@ -41,25 +44,23 @@
 
 
 
-<div class="container-page-main">
+<div class="container-page-main" id="container-page-main">
  
 
-  <aside class="aside-left">
+  <aside class="aside-left" id="aside-left">
     <div class="container-aside-left">
-      <ul>
+      
+      <ul class="ul-level-1">
         <li>
           <details open>
-            <summary>
-              INICIANDO
+            <summary class="summary-left">
+              <div>INICIANDO</div>
+              <div></div>
             </summary>
-              <ul>
-                <li><a href="#css">Que es CSS</a></li>
-                <li><a href="#agregar-proyecto">Como lo agrego a mi proyecto</a>
-                </li>
-                <li>
-                  <a href="#esctructura">Esctructura CSS
-                  </a>
-                </li>
+              <ul class="ul-aside-left">
+                <li class="li-left"><a href="#css" class="summary-class"> Que esCSS</a></li>
+                <li class="li-left"><a href="#agregar-proyecto">Como lo agrego a mi proyecto</a></li>
+                <li class="li-left"><a href="#esctructura">Esctructura CSS</a></li>
               </ul>
           </details>
 
@@ -67,7 +68,7 @@
         <li>
           <details>
             <summary>
-              Get Started
+              second
             </summary>
               <ul>
                 <li>1</li>
@@ -156,7 +157,7 @@
       </div>
     </aside>
     
-    <main class="container-main">
+    <main class="container-main" id="container-main">
       <div class="container-article-main">
         
         <article class="article-main">
@@ -169,7 +170,7 @@
         <p class="parrafo">
           CSS trabaja en conjunto con HTML para separar la estructura y el contenido de un documento web de su estilo. Mientras que HTML se encarga de definir los elementos y la estructura de una página web, CSS se utiliza para aplicar estilos y diseñar cómo se mostrarán esos elementos en la pantalla.</p>
           <a name="agregar-proyecto"></a>
-          <h2>Como lo agrego a mi proyecto</h2>
+          <h2 class="title-h2">Como lo agrego a mi proyecto</h2>
 
           <p class="parrafo">En el proyecto donde tengas tu codigo html, por lo general creas una carpeta nueva de nombre styles, dentro de esta carpeta crear un archivo de extension css.</p>
           <div class="image-initial">
@@ -220,15 +221,15 @@
           <p class="parrafo">
             <span class="resaltar">Selector:</span> El selector apunta a los elementos HTML a los que se aplicarán los estilos. Puede ser el nombre de un elemento, una clase, un identificador, un atributo o incluso una combinación de ellos. Aquí tienes algunos ejemplos:</p>
 
-            <ul>
-              <li>Nombre de elemento: <span class="resaltar">p</span> selecciona todos los elementos
+            <ul .ul-parrafos>
+              <li class="li-parrafos">Nombre de elemento: <span class="resaltar">p</span> selecciona todos los elementos
                 <span class="resaltar">&lt;p&gt;</span>.
               </li>
-              <li>
+              <li class="li-parrafos">
                 Clase: <span class="resaltar">.clase</span> selecciona todos los elementos con la clase CSS <span class="resaltar">"clase"</span>.
                 
               </li>
-              <li>
+              <li class="li-parrafos">
                 Identificador: #id selecciona el elemento con el identificador CSS <span class="resaltar">"id"</span>.
               </li>
             </ul>
@@ -278,14 +279,45 @@
           En este caso, se aplicarían los estilos a todos los elementos <span class="resaltar">&lt;p&gt;</span>, estableciendo el color del texto en rojo, el tamaño de la fuente en 14 píxeles y el margen superior en 10 píxeles.
         </p>
 
+       
+        <h2 class="title-h2">Comentarios En CSS
+        </h2>
+
         <p class="parrafo">
-          Recuerda que esta es solo una estructura básica, y CSS ofrece muchas más opciones y propiedades para personalizar los estilos de tus elementos HTML.
+          Un comentario de código CSS es una línea o bloque de texto que se utiliza para explicar o documentar partes del código CSS. Estos comentarios no afectan la forma en que se renderiza el sitio web, ya que son ignorados por el navegador.
         </p>
+
+        <p class="parrafo">
+          Los comentarios de CSS son útiles para hacer notas sobre el propósito o la función de ciertas reglas CSS, así como para proporcionar información adicional a otros desarrolladores que pueden trabajar en el mismo código más adelante.
+        </p>
+
+        <p class="parrafo">
+          Hay un tipo de comentarios en CSS:
+        </p>
+
+        <p class="parrafo">
+          Se inician con <span class="resaltar">/*</span> y se cierran con <span class="resaltar">*/</span>. Todo lo que se encuentra entre estas marcas se considera un comentario y no se ejecutará. Por ejemplo:
+        </p>
+
+        <div class="code-only">
+          <pre class="pre-code">
+            <code  class="language-css line-numbers" data-previewers="color time">
+
+                /*
+                Este es un comentario y no
+                será tenido en cuenta por el navegador
+                */
+            </code>
+          </pre>
+        </div>
 
           </article>
 
 
           <footer>
+            <p class="parrafo">
+              Recuerda que esta es solo una estructura básica, y CSS ofrece muchas más opciones y propiedades para personalizar los estilos de tus elementos HTML.
+            </p>
 
           </footer>
           
@@ -344,6 +376,8 @@
     
     
   
-    <script src="/js/prism_js/prism.js"></script>
+    <script src="./js/prism_js/prism.js"></script>
+    <script src="./js/scriptjsindex.js"></script>
+    
 </body>
 </html>
