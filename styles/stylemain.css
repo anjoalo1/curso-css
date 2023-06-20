@@ -32,8 +32,10 @@ body{
 /*-*/
 
 .header-from{
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* height: 40px; */
     margin-top: 20px; 
@@ -198,8 +200,12 @@ body{
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid gray;
     
 }
+
+
 
 .container-footer-main{
     display: flex;
@@ -256,12 +262,12 @@ min-width: 270px;
     line-height: 2rem;
     margin-top: 40px;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .resaltar{
     color: rgb(218, 57, 92);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.8px;
     word-spacing: 1px;
@@ -269,7 +275,7 @@ min-width: 270px;
 }
 
 .ul-parrafos{
-   font-size: 1rem;
+   font-size: 1.5rem;
     letter-spacing: 0.8px;
     word-spacing: 1px;
     line-height: 30px; 
@@ -277,13 +283,23 @@ min-width: 270px;
 }
 
 .li-parrafos{
-   font-size: 1rem;
+   font-size: 1.5rem;
     letter-spacing: 0.8px;
     word-spacing: 1px;
     line-height: 30px;
     margin: 8px 0; 
 }
 
+
+
+
+
+
+
+
+/* *****************************
+clases para el menu de lado izquierdo
+* ***********************************/
 .remove-aside-left{
     display: none;
 }
@@ -306,3 +322,5 @@ padding-right: 0
     background: rgb(42,27,54);
     background: radial-gradient(circle, rgba(42,27,54,1) 100%, rgba(88,21,113,0.695098107602416) 100%);
 }
+
+/************************************/
