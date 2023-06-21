@@ -20,7 +20,7 @@
 
   <header class="header-from">
     <div class="burger-icon" id="burger-icon">
-      <img src="../assets/burger_svg.svg" height="40px">
+      <img src="../assets/burger_svg.svg" height="30px">
     </div>
    
       <ul class="nav-header">
@@ -49,6 +49,7 @@
 
   <aside class="aside-left" id="aside-left">
     <div class="container-aside-left">
+      
       <ul class="ul-level-1">
         <li>
           <details open>
@@ -56,93 +57,47 @@
               <div><a href="../index.html">INICIANDO</a></div>
               <div></div>
             </summary>
-              <ul class="ul-aside-left">
-                <li class="li-left"><a href="../index.html#css" class="summary-class"> Que esCSS</a></li>
-                <li class="li-left"><a href="../index.html#agregar-proyecto">Como lo agrego a mi proyecto</a></li>
-                <li class="li-left"><a href="../index.html#esctructura">Esctructura CSS</a></li>
-              </ul>
+            <!--   <ul class="ul-aside-left">
+                <li class="li-left"><a href="#css" class="summary-class"> Que esCSS</a></li>
+                <li class="li-left"><a href="#agregar-proyecto">Como lo agrego a mi proyecto</a></li>
+                <li class="li-left"><a href="#esctructura">Esctructura CSS</a></li>
+              </ul> -->
           </details>
 
         </li>
         <li>
           <details open>
             <summary class="summary-left">
-              <a href="../pages/selectors.html">SELECTORES</a>
+
+              <div><a href="../pages/selectors.html">SELECTORES</a></div>
+              
+              
             </summary>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
+             
           </details>
         </li>
         <li>
           <details>
-            <summary>
-              Get Started
+            <summary class="summary-left">
+              <div><a href="#">INICIANDO</a></div>
             </summary>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
+              
           </details>
         </li>
         <li>
           <details>
-            <summary>
-              Get Started
+            <summary class="summary-left">
+              <div><a href="#">INICIANDO</a></div>
             </summary>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
+              
           </details>
         </li>
         <li>
           <details>
-            <summary>
-              Get Started
+            <summary class="summary-left">
+              <div><a href="#">INICIANDO</a></div>
             </summary>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
+             
           </details>
         </li>
        
@@ -158,10 +113,16 @@
     
     <main class="container-main" id="container-main">
       <div class="container-article-main">
+
+        
+          <div class="article-main">
+            <h1 class="title-course" >SELECTORES</h1>
+          </div>
+        
         
         <article class="article-main">
-          <a name="css"></a>
-          <h1 class="title-course" >SELECTORES</h1>
+          
+          
           
           <h2 class="title-h2">Que es un selector?</h2>
 
@@ -249,8 +210,59 @@
         </div>
 
 
-        
+          </article>
 
+          <!-- --------------------------------------------- -->
+
+          <article class="article-main">
+            <h2 class="title-h2">
+              Selector Descendiente
+            </h2>
+    
+            <p class="parrafo">
+              Un selector descendiente en CSS es una forma de seleccionar un elemento HTML específico que está anidado dentro de otro elemento. Permite aplicar estilos a un elemento hijo basado en su relación con un elemento padre.
+            </p>
+    
+            <p class="parrafo">
+              La sintaxis para un selector descendiente es bastante sencilla. Se utiliza un espacio entre los selectores para indicar la relación de descendencia. Por ejemplo, si queremos seleccionar todos los párrafos <span class="resaltar">&lt;p&gt;</span> que están dentro de un elemento <span class="resaltar">&lt;div&gt;</span>, podemos usar el siguiente selector descendiente:
+            </p>
+    
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+    
+                  div p {
+                    /* Estilos para los párrafos dentro de un div */
+                  }
+                </code>
+              </pre>
+            </div>
+    
+            <p class="parrafo">
+              En este caso, el selector <span class="resaltar">div p</span> seleccionará todos los elementos <span class="resaltar">&lt;p&gt;</span> que sean descendientes directos o indirectos de un elemento <span class="resaltar">&lt;div&gt;</span>.
+            </p>
+    
+    
+            <p class="parrafo">
+              Es importante tener en cuenta que los selectores descendientes pueden ser anidados a varios niveles. Por ejemplo, si queremos seleccionar un elemento <span class="resaltar">&lt;span&gt;</span> que está dentro de un elemento <span class="resaltar">&lt;div&gt;</span> que a su vez está dentro de un elemento <span class="resaltar">&lt;section&gt;</span>, podemos utilizar el siguiente selector descendiente:
+            </p>
+            
+        
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+    
+                  section div span {
+                    /* Estilos para el span dentro de un div dentro de una section */
+                  }
+                  
+                </code>
+              </pre>
+            </div>
+    
+           
+    
+    
           </article>
 
 
