@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="/styles/prism_css/prism.css">
     <link rel="stylesheet" href="../styles/stylemain.css">
     
-    <title>Document</title>
+    <title>selector</title>
 </head>
 <body>
 <div class="header-main">
@@ -116,7 +116,7 @@
 
         
           <div class="article-main">
-            <h1 class="title-course" >SELECTORES</h1>
+            <h1 class="title-course" >SELECTOR</h1>
           </div>
         
         
@@ -259,11 +259,177 @@
                 </code>
               </pre>
             </div>
-    
-           
-    
-    
           </article>
+
+
+  <!-- --------------------------------------------- -->
+
+  <article class="article-main">
+    <h2 class="title-h2">
+      Combinación selector (etiqueta y clase)
+    </h2>
+
+    <p class="parrafo">
+      La combinación de una etiqueta y una clase en CSS te permite seleccionar elementos específicos que coincidan tanto con la etiqueta como con la clase especificada. Esto te permite aplicar estilos a elementos particulares dentro de un grupo más amplio de elementos con la misma etiqueta.
+    </p>
+
+    <p class="parrafo">
+      La sintaxis para combinar una etiqueta y una clase en CSS es simplemente concatenar el nombre de la etiqueta y el nombre de la clase sin espacios entre ellos.
+    </p>
+
+    <p class="parrafo">
+      Aquí tienes un ejemplo de cómo combinar una etiqueta y una clase en CSS
+    </p>
+
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-html line-numbers" data-previewers="color time">
+          &lt;!-- codigo html--&gt;
+          &lt;p class="destacado"&gt;Este es un párrafo con la clase "destacado"&lt;/p&gt;
+          &lt;p&gt;Este es un párrafo sin ninguna clase&lt;/p&gt;
+          &lt;p class="destacado"&gt;Este es otro párrafo con la clase "destacado"&lt;/p&gt;
+        </code>
+      </pre>
+    </div>
+
+    
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-css line-numbers" data-previewers="color time">
+          /*codigo css*/
+          p.destacado {
+            color: red;
+            font-weight: bold;
+          }
+          
+        </code>
+      </pre>
+    </div>
+
+
+    <p class="parrafo">
+      En este ejemplo, el selector p.destacado selecciona los elementos <span class="resaltar">&lt;p&gt;</span> que también tienen la clase <span class="resaltar">"destacado"</span> aplicada. Los estilos definidos en las reglas CSS se aplicarán solo a esos elementos. En este caso, los párrafos con la clase "destacado" se mostrarán en rojo y en negrita.
+    </p>
+
+
+    <p class="parrafo">
+      Es importante destacar que cuando combinas una etiqueta y una clase en CSS, estás especificando una regla más específica que solo la etiqueta o la clase por sí solas. Esto puede ser útil para aplicar estilos a elementos específicos en situaciones donde hay múltiples elementos con la misma etiqueta pero con diferentes clases aplicadas.
+    </p>
+    
+
+  </article>
+
+  <!-- --------------------------------------------- -->
+
+  <article class="article-main">
+    <h2 class="title-h2">
+      Selectores de atributo
+    </h2>
+
+    <p class="parrafo">
+      Los selectores de atributo en CSS te permiten seleccionar elementos HTML en función de los valores de sus atributos. Estos selectores te dan la flexibilidad de aplicar estilos a elementos que cumplan ciertos criterios en términos de sus atributos.
+    </p>
+
+    <p class="parrafo">
+      Hay varios tipos de selectores de atributo disponibles en CSS, y aquí te presentaré algunos ejemplos comunes:
+    </p>
+
+    <ul>
+      <li>
+        <p class="parrafo">
+          Selector de atributo exacto <span class="resaltar">[atributo="valor"]</span>: Selecciona elementos que tengan un atributo específico con un valor exacto. Por ejemplo:
+        </p>
+      </li>
+    </ul>
+
+
+
+
+    <p class="parrafo">
+      
+    </p>
+
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-html line-numbers" data-previewers="color time">
+          &lt;!-- codigo html--&gt;
+          &lt;input type="text"&gt; input con el type="text"&gt;
+          &lt;input type="email"&gt; input con el type="email"&gt;
+         
+        </code>
+      </pre>
+    </div>
+
+    
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-css line-numbers" data-previewers="color time">
+          input[type="text"] {
+            color: red;
+          }
+        </code>
+      </pre>
+    </div>
+
+
+    <p class="parrafo">
+      Este selector seleccionará todos los elementos <span class="resaltar">&lt;input&gt;</span> de tipo "text" y les aplicará el estilo de color rojo..
+    </p>
+
+
+   <ul class="li">
+    <li>
+      <p class="parrafo">
+        Selector de atributo que comienza con <span class="resaltar">[atributo^="valor"]</span>: Selecciona elementos que tengan un atributo específico cuyo valor comience con un texto determinado. Por ejemplo:
+      </p>
+    </li>
+   </ul>
+
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-css line-numbers" data-previewers="color time">
+          a[href^="https"] {
+            font-weight: bold;
+          }
+        </code>
+      </pre>
+    </div>
+
+    <p class="parrafo">
+      Este selector seleccionará todos los elementos <span class="resaltar">&lt;a&gt; </span>que tengan el atributo href que comience con <span class="restaltar">"https"</span> y les aplicará el estilo de texto en negrita.
+    </p>
+
+
+   <ul>
+    <li>
+      <p class="parrafo">
+        Selector de atributo que termina con <span class="resaltar">[atributo$="valor"]</span>: Selecciona elementos que tengan un atributo específico cuyo valor termine con un texto determinado. Por ejemplo:
+      </p>
+    </li>
+   </ul>
+
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-css line-numbers" data-previewers="color time">
+          img[src$=".png"] {
+            border: 1px solid black;
+          }          
+        </code>
+      </pre>
+    </div>
+
+    <p class="parrafo">
+      Este selector seleccionará todas las imágenes <span class="resaltar">&lt;img&gt;</span> que tengan el atributo src que termine con <span class="resaltar">".png"</span> y les aplicará un borde de 1 píxel sólido de color negro.
+    </p>
+    
+
+  </article>
+
+
+
+
+
+
 
 
           <footer>
