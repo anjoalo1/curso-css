@@ -1,8 +1,10 @@
 :root{
-    --color-letter:rgb(255, 255, 255);
+    --color-letter:#261346;
     --color-header:rgb(98, 70, 235);
-    --backgroun-main: rgb(0, 0, 0);
+    --backgroun-main: radial-gradient(circle, rgba(83,92,115,1) 0%, rgba(60,53,53,1) 100%);
     --article-main: rgb(82, 74, 74);
+
+    --article-main-2:grey;
     --title-h1: rgb(255, 255, 255);
     --span-resaltar: #f92672;
 }
@@ -121,7 +123,7 @@ body{
 .container-main{
     grid-column: 2/3;
     margin-top: 60px;
-    width: 100%; 
+    width: 60vw; 
     margin-left: auto;
     margin-right: auto;  
 }
@@ -136,7 +138,7 @@ body{
 }
 
 .article-main{
-    background-color: var(--article-main);
+    background: var(--article-main-2);
     padding: 40px;
     margin: 10px;
 }
@@ -166,6 +168,8 @@ body{
         padding-left: 0;
     padding-right: 0;
     }
+
+    
 }
 
 /*content main*/
@@ -191,7 +195,7 @@ body{
 }
 
 .title-h2:hover{
-    background-color: rgb(242, 229, 229);
+    color: var(--span-resaltar);
 }
 
 
@@ -323,10 +327,24 @@ clases para el menu de lado izquierdo
     display: flex;
     justify-content: space-around;
     color: var(--color-letter);
-    background-color: gray;
+    background:var(--article-main-2);
     /* border: 1px solid gray */;
     padding: 40px;
     margin: 10px;
     
 
 }
+
+#modal1{
+    width: 80%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.image-{
+    text-align: center;
+    margin-right: 0;
+}
+

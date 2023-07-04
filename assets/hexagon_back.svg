@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 595 92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_322-4);
+        stroke: url(#Degradado_sin_nombre_81-4);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        fill: url(#Motivo_nuevo_3);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_322);
+        stroke: url(#Degradado_sin_nombre_81);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_322-5);
+        stroke: url(#Degradado_sin_nombre_81-5);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_322-3);
+        stroke: url(#Degradado_sin_nombre_81-3);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_322-2);
+        stroke: url(#Degradado_sin_nombre_81-2);
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_322" data-name="Degradado sin nombre 322" cx="89.34" cy="-15135" fx="89.34" fy="-15135" r="78.85" gradientTransform="translate(167 -14987) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2581c4" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#0097bf" stop-opacity=".56"/>
+      <stop offset="1" stop-color="#364597"/>
+    </radialGradient>
+    <linearGradient id="Degradado_sin_nombre_81" data-name="Degradado sin nombre 81" x1="3.9" y1="-15135" x2="174.79" y2="-15135" gradientTransform="translate(167 -14987) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffef26"/>
+      <stop offset=".02" stop-color="#fee921"/>
+      <stop offset=".1" stop-color="#fdd70e"/>
+      <stop offset=".19" stop-color="#fdcb03"/>
+      <stop offset=".28" stop-color="#fdc800"/>
+      <stop offset=".67" stop-color="#f18f34"/>
+      <stop offset=".89" stop-color="#e95f32"/>
+      <stop offset="1" stop-color="#e3312d"/>
+    </linearGradient>
+    <radialGradient id="Degradado_sin_nombre_322-2" data-name="Degradado sin nombre 322" cx="-167" fx="-167" xlink:href="#Degradado_sin_nombre_322"/>
+    <linearGradient id="Degradado_sin_nombre_81-2" data-name="Degradado sin nombre 81" x1="-252.45" x2="-81.55" xlink:href="#Degradado_sin_nombre_81"/>
+    <radialGradient id="Degradado_sin_nombre_322-3" data-name="Degradado sin nombre 322" cy="-14987" fy="-14987" xlink:href="#Degradado_sin_nombre_322"/>
+    <linearGradient id="Degradado_sin_nombre_81-3" data-name="Degradado sin nombre 81" y1="-14987" y2="-14987" xlink:href="#Degradado_sin_nombre_81"/>
+    <radialGradient id="Degradado_sin_nombre_322-4" data-name="Degradado sin nombre 322" cx="-38.83" cy="-15061" fx="-38.83" fy="-15061" xlink:href="#Degradado_sin_nombre_322"/>
+    <linearGradient id="Degradado_sin_nombre_81-4" data-name="Degradado sin nombre 81" x1="-124.28" y1="-15061" x2="46.62" y2="-15061" xlink:href="#Degradado_sin_nombre_81"/>
+    <radialGradient id="Degradado_sin_nombre_322-5" data-name="Degradado sin nombre 322" cx="-167" cy="-14987" fx="-167" fy="-14987" xlink:href="#Degradado_sin_nombre_322"/>
+    <linearGradient id="Degradado_sin_nombre_81-5" data-name="Degradado sin nombre 81" x1="-252.45" y1="-14987" x2="-81.55" y2="-14987" xlink:href="#Degradado_sin_nombre_81"/>
+    <pattern id="Motivo_nuevo_3" data-name="Motivo nuevo 3" x="0" y="0" width="256.34" height="148" patternTransform="translate(-5607.39 -5473.67) scale(.29)" patternUnits="userSpaceOnUse" viewBox="0 0 256.34 148">
+      <g>
+        <rect class="cls-7" width="256.34" height="148"/>
+        <polygon class="cls-2" points="298.49 75 214.2 75 172.05 148 214.2 221 298.49 221 340.64 148 298.49 75"/>
+        <polygon class="cls-5" points="42.15 75 -42.15 75 -84.29 148 -42.15 221 42.15 221 84.29 148 42.15 75"/>
+        <polygon class="cls-4" points="298.49 -73 214.2 -73 172.05 0 214.2 73 298.49 73 340.64 0 298.49 -73"/>
+        <polygon class="cls-1" points="170.32 1 86.03 1 43.88 74 86.03 147 170.32 147 212.46 74 170.32 1"/>
+        <polygon class="cls-3" points="42.15 -73 -42.15 -73 -84.29 0 -42.15 73 42.15 73 84.29 0 42.15 -73"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect class="cls-6" width="595" height="92"/>
+</svg>
