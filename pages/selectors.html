@@ -22,18 +22,20 @@
     <div class="burger-icon" id="burger-icon">
       <img src="../assets/burger_svg.svg" height="30px">
     </div>
+
+    <div>CURSO CSS</div>
    
       <ul class="nav-header">
         <li></li>
+        <!-- <li></li>
         <li></li>
         <li></li>
-        <li></li>
-        <li></li>
+        <li></li -->
       </ul>
       
-      <div>
+     <!--  <div>
         <input type="button" value="dia">
-      </div>
+      </div> -->
 
 
   </header>
@@ -421,6 +423,96 @@
     <p class="parrafo">
       Este selector seleccionará todas las imágenes <span class="resaltar">&lt;img&gt;</span> que tengan el atributo src que termine con <span class="resaltar">".png"</span> y les aplicará un borde de 1 píxel sólido de color negro.
     </p>
+
+
+    
+    <ul class="li">
+      <li>
+        
+        <p class="parrafo">
+          El selector de atributo <span class="resaltar">*=</span> en CSS se utiliza para seleccionar elementos que tengan un atributo específico que contenga un valor determinado en cualquier posición dentro del valor del atributo.
+    
+        </p>
+      </li>
+    </ul>
+
+    <p class="parrafo">
+      La sintaxis del selector de atributo <span class="resaltar">*=</span> es la siguiente:  <span class="resaltar">[atributo*="valor"]</span>.
+    </p>
+    <p class="parrafo">
+      Aquí tienes un ejemplo para ilustrar su uso:
+    </p>
+
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-css line-numbers" data-previewers="color time">
+          a[href*="google"] {
+            color: blue;
+          }
+                   
+        </code>
+      </pre>
+    </div>
+
+
+    <p class="parrafo">En este ejemplo, el selector <span class="resaltar">a[href*="google"]</span> seleccionará todos los elementos <a> que tengan el atributo href que contenga la cadena "google" en cualquier posición. Se les aplicará el estilo de color azul.</p>
+    <p class="parrafo">Esto significa que se seleccionarán elementos con href que contengan "google.com", "google.es", "http://www.google.com", "https://www.google.com/search", entre otros.</p>
+    <p class="parrafo">El selector <span class="resaltar">*=</span> puede ser útil cuando deseas aplicar estilos a elementos que contienen un valor específico dentro de un atributo, sin importar su posición exacta en el valor del atributo.</p>
+
+
+
+    <ul class="li">
+      <li>
+        
+        <p class="parrafo">
+          El selector <span class="resaltar">~=</span> en CSS se utiliza para seleccionar elementos que tienen un atributo específico con un valor que coincide con una palabra completa dentro de una lista separada por espacios.
+        </p>
+      </li>
+    </ul>
+
+
+    <p class="parrafo">
+      La sintaxis del selector <span class="resaltar">~=</span> es la siguiente: [atributo~="valor"].
+    </p>
+
+    <p class="parrafo">
+      Aquí tienes un ejemplo para ilustrar su uso:
+    </p>
+
+    <div class="code-only">
+      <pre class="pre-code">
+        <code  class="language-css line-numbers" data-previewers="color time">
+          p[class~="destacado"] {
+            color: red;
+          }
+          
+                   
+        </code>
+      </pre>
+    </div>
+
+
+
+    <p class="parrafo">
+      En este ejemplo, el selector <span class="resaltar">p[class~="destacado"]</span> seleccionará todos los elementos <span class="resaltar">&lt;p&gt;</span> que tengan el atributo class con el valor "destacado" como una palabra completa en una lista de clases separadas por espacios. Se les aplicará el estilo de color rojo.
+    </p>
+
+
+    <p class="parrafo">
+      Esto significa que se seleccionarán elementos como <span class="resaltar">&lt;p class="destacado">&lt;/p&gt;</span>,
+      <span class="resaltar">
+        &lt;p class="otra-clase destacado"&gt;&lt;/p&gt;
+      </span>, pero no se seleccionarán elementos como
+      <span class="resaltar">
+        &lt;p class="no-destacado"&gt; o &lt;p class="destacadototalmente"&gt;
+      </span>
+     .
+    </p>
+
+
+    <p class="parrafo">
+      El selector <span class="resaltar">~=</span> puede ser útil cuando deseas aplicar estilos a elementos que tienen un valor específico como una palabra completa dentro de una lista de atributos separados por espacios, como en el caso de las clases CSS.
+    </p>
     
 
   </article>
@@ -443,38 +535,20 @@
 
           
         <footer>
-        <div class="container-footer-main">
-
-
-          <div class="item-footer-main">
-            <p class="p-footer-main">item 1</p>
-            <p class="p-footer-main">item 2</p>
-            <p class="p-footer-main">item 3</p>
-            <p class="p-footer-main">item 4</p>
-            <p class="p-footer-main">item 5</p>
-            <p class="p-footer-main">item 6</p>
-          </div>
-
-          <div class="item-footer-main">
-            <p class="p-footer-main">item 1</p>
-            <p class="p-footer-main">item 2</p>
-            <p class="p-footer-main">item 3</p>
-            <p class="p-footer-main">item 4</p>
-            <p class="p-footer-main">item 5</p>
-            <p class="p-footer-main">item 6</p>
-          </div>
-
-          <div class="item-footer-main">
-            <p class="p-footer-main">item 1</p>
-            <p class="p-footer-main">item 2</p>
-            <p class="p-footer-main">item 3</p>
-            <p class="p-footer-main">item 4</p>
-            <p class="p-footer-main">item 5</p>
-            <p class="p-footer-main">item 6</p>
-          </div>
-
-
-        </div> 
+          
+            <div class="container-footer-main">
+    
+    
+              <div class="item-footer-main">
+                <p class="p-footer-main">Creado por Solu-Informática</p>
+              
+              </div>
+    
+          
+    
+    
+            </div> 
+          
 
         
       </footer>
