@@ -1,12 +1,12 @@
 :root{
     --color-letter:#261346;
     --color-header:rgb(98, 70, 235);
-    --backgroun-main: radial-gradient(circle, rgba(83,92,115,1) 0%, rgba(60,53,53,1) 100%);
+    --backgroun-main: #20252C;
     --article-main: rgb(82, 74, 74);
 
     --article-main-2:grey;
-    --title-h1: rgb(255, 255, 255);
-    --span-resaltar: #8c3918;
+    --title-h1: #20252C;
+    --span-resaltar: #C70039;
 }
 
 body{
@@ -25,7 +25,6 @@ body{
    top: 0;
      z-index: 100; 
     background: var(--color-header);
-    border-bottom: 1px solid gray;
 }
 
 /*-*/
@@ -103,9 +102,12 @@ body{
     padding: 10px;
    /*  background-color: rgb(39, 45, 45); */
     margin: 5px 0;
+    transition: 0.3s;
 }
 .summary-left:hover{
     background-color: #241218;
+    font-size: 1.5rem;
+    border: 1px solid white;
 
 }
 
@@ -121,10 +123,6 @@ body{
 }
 
 .container-article-main{
-    
-   /*  border: 1px solid gray; */
- 
-    /* margin-top: 10px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -133,6 +131,7 @@ body{
     background: var(--article-main-2);
     padding: 40px;
     margin: 10px;
+    box-shadow: -10px -10px 20px rgb(0, 0, 0, 0.9);
 }
 
 
@@ -170,12 +169,19 @@ body{
 
 .title-course{
     text-align: center;
-    color: var(--span-resaltar);
+    color: var(--title-h1);
     margin-top: 50px;
     /* color: var(--title-h1);  */
     font-size: 4rem;
     font-weight: bold;
+    transition: 1s;
 }
+
+
+.title-course:hover{
+    box-shadow: -2px -2px 20px rgb(0, 0, 0, 0.9);
+}
+
 
 .title-h2{
     font-size: 2.5rem;
@@ -189,6 +195,8 @@ body{
 
 .title-h2:hover{
     color: var(--span-resaltar);
+    box-shadow: -2px -2px 20px rgb(0, 0, 0, 0.9);
+
 }
 
 
