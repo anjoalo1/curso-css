@@ -27,15 +27,10 @@
    
       <ul class="nav-header">
         <li></li>
-        <!-- <li></li>
-        <li></li>
-        <li></li>
-        <li></li -->
+
       </ul>
       
-     <!--  <div>
-        <input type="button" value="dia">
-      </div> -->
+     
 
 
   </header>
@@ -59,11 +54,6 @@
               <div><a href="../index.html">INICIANDO</a></div>
               <div></div>
             </summary>
-            <!--   <ul class="ul-aside-left">
-                <li class="li-left"><a href="#css" class="summary-class"> Que esCSS</a></li>
-                <li class="li-left"><a href="#agregar-proyecto">Como lo agrego a mi proyecto</a></li>
-                <li class="li-left"><a href="#esctructura">Esctructura CSS</a></li>
-              </ul> -->
           </details>
 
         </li>
@@ -113,8 +103,8 @@
       </div>
     </aside>
     
-    <main class="container-main" id="container-main">
-      <div class="container-article-main">
+  <main class="container-main" id="container-main">
+    <section class="container-article-main">
 
         
           <div class="article-main" id="container-title-h1">
@@ -187,32 +177,32 @@
             </pre>
           </div>
 
-        <p class="parrafo">
-          Selectores de ID: Se utilizan para seleccionar un elemento específico que tiene un atributo id único. Se definen anteponiendo un signo de numeral <span class="resaltar">#</span> al nombre del ID. Por ejemplo, el selector <span class="resaltar">#mi-id</span> selecciona el elemento que tiene <span class="resaltar">id="mi-id"</span>.
-        </p>
+          <p class="parrafo">
+            Selectores de ID: Se utilizan para seleccionar un elemento específico que tiene un atributo id único. Se definen anteponiendo un signo de numeral <span class="resaltar">#</span> al nombre del ID. Por ejemplo, el selector <span class="resaltar">#mi-id</span> selecciona el elemento que tiene <span class="resaltar">id="mi-id"</span>.
+          </p>
 
-        <p class="parrafo">
-          Aquí algunos ejemplos:
-        </p>
+          <p class="parrafo">
+            Aquí algunos ejemplos:
+          </p>
 
-        <div class="code-only">
-          <pre class="pre-code">
-            <code  class="language-css line-numbers" data-previewers="color time">
+          <div class="code-only">
+            <pre class="pre-code">
+              <code  class="language-css line-numbers" data-previewers="color time">
 
-              /*selector de id título*/
-              #titulo{
-                font-size: 16px;
-              }
-              /*selector de id resaltar*/
-              #resaltar{
-              font-weight: bold;
-              }
-            </code>
-          </pre>
-        </div>
+                /*selector de id título*/
+                #titulo{
+                  font-size: 16px;
+                }
+                /*selector de id resaltar*/
+                #resaltar{
+                font-weight: bold;
+                }
+              </code>
+            </pre>
+          </div>
 
 
-          </article>
+        </article>
 
           <!-- --------------------------------------------- -->
 
@@ -264,259 +254,257 @@
           </article>
 
 
-  <!-- --------------------------------------------- -->
+            <!-- --------------------------------------------- -->
 
-  <article class="article-main">
-    <h2 class="title-h2">
-      Combinación selector (etiqueta y clase)
-    </h2>
+      <article class="article-main">
+                <h2 class="title-h2">
+                  Combinación selector (etiqueta y clase)
+                </h2>
 
-    <p class="parrafo">
-      La combinación de una etiqueta y una clase en CSS te permite seleccionar elementos específicos que coincidan tanto con la etiqueta como con la clase especificada. Esto te permite aplicar estilos a elementos particulares dentro de un grupo más amplio de elementos con la misma etiqueta.
-    </p>
+                <p class="parrafo">
+                  La combinación de una etiqueta y una clase en CSS te permite seleccionar elementos específicos que coincidan tanto con la etiqueta como con la clase especificada. Esto te permite aplicar estilos a elementos particulares dentro de un grupo más amplio de elementos con la misma etiqueta.
+                </p>
 
-    <p class="parrafo">
-      La sintaxis para combinar una etiqueta y una clase en CSS es simplemente concatenar el nombre de la etiqueta y el nombre de la clase sin espacios entre ellos.
-    </p>
+                <p class="parrafo">
+                  La sintaxis para combinar una etiqueta y una clase en CSS es simplemente concatenar el nombre de la etiqueta y el nombre de la clase sin espacios entre ellos.
+                </p>
 
-    <p class="parrafo">
-      Aquí tienes un ejemplo de cómo combinar una etiqueta y una clase en CSS
-    </p>
+                <p class="parrafo">
+                  Aquí tienes un ejemplo de cómo combinar una etiqueta y una clase en CSS
+                </p>
 
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-html line-numbers" data-previewers="color time">
-          &lt;!-- codigo html--&gt;
-          &lt;p class="destacado"&gt;Este es un párrafo con la clase "destacado"&lt;/p&gt;
-          &lt;p&gt;Este es un párrafo sin ninguna clase&lt;/p&gt;
-          &lt;p class="destacado"&gt;Este es otro párrafo con la clase "destacado"&lt;/p&gt;
-        </code>
-      </pre>
-    </div>
+                <div class="code-only">
+                  <pre class="pre-code">
+                    <code  class="language-html line-numbers" data-previewers="color time">
+                      &lt;!-- codigo html--&gt;
+                      &lt;p class="destacado"&gt;Este es un párrafo con la clase "destacado"&lt;/p&gt;
+                      &lt;p&gt;Este es un párrafo sin ninguna clase&lt;/p&gt;
+                      &lt;p class="destacado"&gt;Este es otro párrafo con la clase "destacado"&lt;/p&gt;
+                    </code>
+                  </pre>
+                </div>
 
-    
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-css line-numbers" data-previewers="color time">
-          /*codigo css*/
-          p.destacado {
-            color: red;
-            font-weight: bold;
-          }
-          
-        </code>
-      </pre>
-    </div>
-
-
-    <p class="parrafo">
-      En este ejemplo, el selector p.destacado selecciona los elementos <span class="resaltar">&lt;p&gt;</span> que también tienen la clase <span class="resaltar">"destacado"</span> aplicada. Los estilos definidos en las reglas CSS se aplicarán solo a esos elementos. En este caso, los párrafos con la clase "destacado" se mostrarán en rojo y en negrita.
-    </p>
+                
+                <div class="code-only">
+                  <pre class="pre-code">
+                    <code  class="language-css line-numbers" data-previewers="color time">
+                      /*codigo css*/
+                      p.destacado {
+                        color: red;
+                        font-weight: bold;
+                      }
+                      
+                    </code>
+                  </pre>
+                </div>
 
 
-    <p class="parrafo">
-      Es importante destacar que cuando combinas una etiqueta y una clase en CSS, estás especificando una regla más específica que solo la etiqueta o la clase por sí solas. Esto puede ser útil para aplicar estilos a elementos específicos en situaciones donde hay múltiples elementos con la misma etiqueta pero con diferentes clases aplicadas.
-    </p>
-    
-
-  </article>
-
-  <!-- --------------------------------------------- -->
-
-  <article class="article-main">
-    <h2 class="title-h2">
-      Selectores de atributo
-    </h2>
-
-    <p class="parrafo">
-      Los selectores de atributo en CSS te permiten seleccionar elementos HTML en función de los valores de sus atributos. Estos selectores te dan la flexibilidad de aplicar estilos a elementos que cumplan ciertos criterios en términos de sus atributos.
-    </p>
-
-    <p class="parrafo">
-      Hay varios tipos de selectores de atributo disponibles en CSS, y aquí te presentaré algunos ejemplos comunes:
-    </p>
-
-    <ul>
-      <li>
-        <p class="parrafo">
-          Selector de atributo exacto <span class="resaltar">[atributo="valor"]</span>: Selecciona elementos que tengan un atributo específico con un valor exacto. Por ejemplo:
-        </p>
-      </li>
-    </ul>
+                <p class="parrafo">
+                  En este ejemplo, el selector p.destacado selecciona los elementos <span class="resaltar">&lt;p&gt;</span> que también tienen la clase <span class="resaltar">"destacado"</span> aplicada. Los estilos definidos en las reglas CSS se aplicarán solo a esos elementos. En este caso, los párrafos con la clase "destacado" se mostrarán en rojo y en negrita.
+                </p>
 
 
+                <p class="parrafo">
+                  Es importante destacar que cuando combinas una etiqueta y una clase en CSS, estás especificando una regla más específica que solo la etiqueta o la clase por sí solas. Esto puede ser útil para aplicar estilos a elementos específicos en situaciones donde hay múltiples elementos con la misma etiqueta pero con diferentes clases aplicadas.
+                </p>
+            
 
+      </article>
 
-    <p class="parrafo">
-      
-    </p>
+          <!-- --------------------------------------------- -->
 
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-html line-numbers" data-previewers="color time">
-          &lt;!-- codigo html--&gt;
-          &lt;input type="text"&gt; input con el type="text"&gt;
-          &lt;input type="email"&gt; input con el type="email"&gt;
-         
-        </code>
-      </pre>
-    </div>
+      <article class="article-main">
+            <h2 class="title-h2">
+              Selectores de atributo
+            </h2>
 
-    
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-css line-numbers" data-previewers="color time">
-          input[type="text"] {
-            color: red;
-          }
-        </code>
-      </pre>
-    </div>
+            <p class="parrafo">
+              Los selectores de atributo en CSS te permiten seleccionar elementos HTML en función de los valores de sus atributos. Estos selectores te dan la flexibilidad de aplicar estilos a elementos que cumplan ciertos criterios en términos de sus atributos.
+            </p>
 
+            <p class="parrafo">
+              Hay varios tipos de selectores de atributo disponibles en CSS, y aquí te presentaré algunos ejemplos comunes:
+            </p>
 
-    <p class="parrafo">
-      Este selector seleccionará todos los elementos <span class="resaltar">&lt;input&gt;</span> de tipo "text" y les aplicará el estilo de color rojo..
-    </p>
-
-
-   <ul class="li">
-    <li>
-      <p class="parrafo">
-        Selector de atributo que comienza con <span class="resaltar">[atributo^="valor"]</span>: Selecciona elementos que tengan un atributo específico cuyo valor comience con un texto determinado. Por ejemplo:
-      </p>
-    </li>
-   </ul>
-
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-css line-numbers" data-previewers="color time">
-          a[href^="https"] {
-            font-weight: bold;
-          }
-        </code>
-      </pre>
-    </div>
-
-    <p class="parrafo">
-      Este selector seleccionará todos los elementos <span class="resaltar">&lt;a&gt; </span>que tengan el atributo href que comience con <span class="restaltar">"https"</span> y les aplicará el estilo de texto en negrita.
-    </p>
-
-
-   <ul>
-    <li>
-      <p class="parrafo">
-        Selector de atributo que termina con <span class="resaltar">[atributo$="valor"]</span>: Selecciona elementos que tengan un atributo específico cuyo valor termine con un texto determinado. Por ejemplo:
-      </p>
-    </li>
-   </ul>
-
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-css line-numbers" data-previewers="color time">
-          img[src$=".png"] {
-            border: 1px solid black;
-          }          
-        </code>
-      </pre>
-    </div>
-
-    <p class="parrafo">
-      Este selector seleccionará todas las imágenes <span class="resaltar">&lt;img&gt;</span> que tengan el atributo src que termine con <span class="resaltar">".png"</span> y les aplicará un borde de 1 píxel sólido de color negro.
-    </p>
-
-
-    
-    <ul class="li">
-      <li>
-        
-        <p class="parrafo">
-          El selector de atributo <span class="resaltar">*=</span> en CSS se utiliza para seleccionar elementos que tengan un atributo específico que contenga un valor determinado en cualquier posición dentro del valor del atributo.
-    
-        </p>
-      </li>
-    </ul>
-
-    <p class="parrafo">
-      La sintaxis del selector de atributo <span class="resaltar">*=</span> es la siguiente:  <span class="resaltar">[atributo*="valor"]</span>.
-    </p>
-    <p class="parrafo">
-      Aquí tienes un ejemplo para ilustrar su uso:
-    </p>
-
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-css line-numbers" data-previewers="color time">
-          a[href*="google"] {
-            color: blue;
-          }
-                   
-        </code>
-      </pre>
-    </div>
-
-
-    <p class="parrafo">En este ejemplo, el selector <span class="resaltar">a[href*="google"]</span> seleccionará todos los elementos <a> que tengan el atributo href que contenga la cadena "google" en cualquier posición. Se les aplicará el estilo de color azul.</p>
-    <p class="parrafo">Esto significa que se seleccionarán elementos con href que contengan "google.com", "google.es", "http://www.google.com", "https://www.google.com/search", entre otros.</p>
-    <p class="parrafo">El selector <span class="resaltar">*=</span> puede ser útil cuando deseas aplicar estilos a elementos que contienen un valor específico dentro de un atributo, sin importar su posición exacta en el valor del atributo.</p>
+            <ul>
+              <li>
+                <p class="parrafo">
+                  Selector de atributo exacto <span class="resaltar">[atributo="valor"]</span>: Selecciona elementos que tengan un atributo específico con un valor exacto. Por ejemplo:
+                </p>
+              </li>
+            </ul>
 
 
 
-    <ul class="li">
-      <li>
-        
-        <p class="parrafo">
-          El selector <span class="resaltar">~=</span> en CSS se utiliza para seleccionar elementos que tienen un atributo específico con un valor que coincide con una palabra completa dentro de una lista separada por espacios.
-        </p>
-      </li>
-    </ul>
+
+            <p class="parrafo">
+              
+            </p>
+
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-html line-numbers" data-previewers="color time">
+                  &lt;!-- codigo html--&gt;
+                  &lt;input type="text"&gt; input con el type="text"&gt;
+                  &lt;input type="email"&gt; input con el type="email"&gt;
+                
+                </code>
+              </pre>
+            </div>
+
+            
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+                  input[type="text"] {
+                    color: red;
+                  }
+                </code>
+              </pre>
+            </div>
 
 
-    <p class="parrafo">
-      La sintaxis del selector <span class="resaltar">~=</span> es la siguiente: [atributo~="valor"].
-    </p>
-
-    <p class="parrafo">
-      Aquí tienes un ejemplo para ilustrar su uso:
-    </p>
-
-    <div class="code-only">
-      <pre class="pre-code">
-        <code  class="language-css line-numbers" data-previewers="color time">
-          p[class~="destacado"] {
-            color: red;
-          }
-          
-                   
-        </code>
-      </pre>
-    </div>
+            <p class="parrafo">
+              Este selector seleccionará todos los elementos <span class="resaltar">&lt;input&gt;</span> de tipo "text" y les aplicará el estilo de color rojo..
+            </p>
 
 
+          <ul class="li">
+            <li>
+              <p class="parrafo">
+                Selector de atributo que comienza con <span class="resaltar">[atributo^="valor"]</span>: Selecciona elementos que tengan un atributo específico cuyo valor comience con un texto determinado. Por ejemplo:
+              </p>
+            </li>
+          </ul>
 
-    <p class="parrafo">
-      En este ejemplo, el selector <span class="resaltar">p[class~="destacado"]</span> seleccionará todos los elementos <span class="resaltar">&lt;p&gt;</span> que tengan el atributo class con el valor "destacado" como una palabra completa en una lista de clases separadas por espacios. Se les aplicará el estilo de color rojo.
-    </p>
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+                  a[href^="https"] {
+                    font-weight: bold;
+                  }
+                </code>
+              </pre>
+            </div>
+
+            <p class="parrafo">
+              Este selector seleccionará todos los elementos <span class="resaltar">&lt;a&gt; </span>que tengan el atributo href que comience con <span class="restaltar">"https"</span> y les aplicará el estilo de texto en negrita.
+            </p>
 
 
-    <p class="parrafo">
-      Esto significa que se seleccionarán elementos como <span class="resaltar">&lt;p class="destacado">&lt;/p&gt;</span>,
-      <span class="resaltar">
-        &lt;p class="otra-clase destacado"&gt;&lt;/p&gt;
-      </span>, pero no se seleccionarán elementos como
-      <span class="resaltar">
-        &lt;p class="no-destacado"&gt; o &lt;p class="destacadototalmente"&gt;
-      </span>
-     .
-    </p>
+          <ul>
+            <li>
+              <p class="parrafo">
+                Selector de atributo que termina con <span class="resaltar">[atributo$="valor"]</span>: Selecciona elementos que tengan un atributo específico cuyo valor termine con un texto determinado. Por ejemplo:
+              </p>
+            </li>
+          </ul>
+
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+                  img[src$=".png"] {
+                    border: 1px solid black;
+                  }          
+                </code>
+              </pre>
+            </div>
+
+            <p class="parrafo">
+              Este selector seleccionará todas las imágenes <span class="resaltar">&lt;img&gt;</span> que tengan el atributo src que termine con <span class="resaltar">".png"</span> y les aplicará un borde de 1 píxel sólido de color negro.
+            </p>
 
 
-    <p class="parrafo">
-      El selector <span class="resaltar">~=</span> puede ser útil cuando deseas aplicar estilos a elementos que tienen un valor específico como una palabra completa dentro de una lista de atributos separados por espacios, como en el caso de las clases CSS.
-    </p>
-    
+            
+            <ul class="li">
+              <li>
+                
+                <p class="parrafo">
+                  El selector de atributo <span class="resaltar">*=</span> en CSS se utiliza para seleccionar elementos que tengan un atributo específico que contenga un valor determinado en cualquier posición dentro del valor del atributo.
+            
+                </p>
+              </li>
+            </ul>
 
-  </article>
+            <p class="parrafo">
+              La sintaxis del selector de atributo <span class="resaltar">*=</span> es la siguiente:  <span class="resaltar">[atributo*="valor"]</span>.
+            </p>
+            <p class="parrafo">
+              Aquí tienes un ejemplo para ilustrar su uso:
+            </p>
 
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+                  a[href*="google"] {
+                    color: blue;
+                  }
+                          
+                </code>
+              </pre>
+            </div>
+
+
+            <p class="parrafo">En este ejemplo, el selector <span class="resaltar">a[href*="google"]</span> seleccionará todos los elementos <a> que tengan el atributo href que contenga la cadena "google" en cualquier posición. Se les aplicará el estilo de color azul.</p>
+            <p class="parrafo">Esto significa que se seleccionarán elementos con href que contengan "google.com", "google.es", "http://www.google.com", "https://www.google.com/search", entre otros.</p>
+            <p class="parrafo">El selector <span class="resaltar">*=</span> puede ser útil cuando deseas aplicar estilos a elementos que contienen un valor específico dentro de un atributo, sin importar su posición exacta en el valor del atributo.</p>
+
+
+
+            <ul class="li">
+              <li>
+                
+                <p class="parrafo">
+                  El selector <span class="resaltar">~=</span> en CSS se utiliza para seleccionar elementos que tienen un atributo específico con un valor que coincide con una palabra completa dentro de una lista separada por espacios.
+                </p>
+              </li>
+            </ul>
+
+
+            <p class="parrafo">
+              La sintaxis del selector <span class="resaltar">~=</span> es la siguiente: [atributo~="valor"].
+            </p>
+
+            <p class="parrafo">
+              Aquí tienes un ejemplo para ilustrar su uso:
+            </p>
+
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+                  p[class~="destacado"] {
+                    color: red;
+                  }
+                  
+                          
+                </code>
+              </pre>
+            </div>
+
+
+
+            <p class="parrafo">
+              En este ejemplo, el selector <span class="resaltar">p[class~="destacado"]</span> seleccionará todos los elementos <span class="resaltar">&lt;p&gt;</span> que tengan el atributo class con el valor "destacado" como una palabra completa en una lista de clases separadas por espacios. Se les aplicará el estilo de color rojo.
+            </p>
+
+
+            <p class="parrafo">
+              Esto significa que se seleccionarán elementos como <span class="resaltar">&lt;p class="destacado">&lt;/p&gt;</span>,
+              <span class="resaltar">
+                &lt;p class="otra-clase destacado"&gt;&lt;/p&gt;
+              </span>, pero no se seleccionarán elementos como
+              <span class="resaltar">
+                &lt;p class="no-destacado"&gt; o &lt;p class="destacadototalmente"&gt;
+              </span>
+            .
+            </p>
+
+
+            <p class="parrafo">
+              El selector <span class="resaltar">~=</span> puede ser útil cuando deseas aplicar estilos a elementos que tienen un valor específico como una palabra completa dentro de una lista de atributos separados por espacios, como en el caso de las clases CSS.
+            </p>
+
+      </article>
 
 
 
@@ -524,55 +512,29 @@
 
 
 
-          <footer>
-
-          </footer>
-          
-        </div>
-
-        
-        
 
           
+          
+    </section>
+
         <footer>
-          
             <div class="container-footer-main">
-    
-    
               <div class="item-footer-main">
                 <p class="p-footer-main">Creado por Solu-Informática</p>
-              
               </div>
-    
-          
-    
-    
             </div> 
-          
-
-        
-      </footer>
+        </footer>
 
 
- 
 
-    </main>
+  </main>
   
-     <!--  <aside class="aside-right">
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam error tempora fugiat. Ullam totam debitis maxime qui dolore voluptatibus dolor odio ut deserunt, eum provident voluptates amet earum perferendis.</p>
-      </aside> -->
+   
   
   
 
-    </div>
+</div>
 
-    
-    
-    
-    
-    
-    
-  
     <script src="/js/prism_js/prism.js"></script>
     <script src="../js/scriptjsindex.js"></script>
     

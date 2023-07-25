@@ -48,8 +48,6 @@
 
 
 <div class="container-page-main" id="container-page-main">
- 
-
   <aside class="aside-left" id="aside-left">
     <div class="container-aside-left">
       
@@ -112,32 +110,36 @@
           
       
       </div>
-    </aside>
+  </aside>
     
-    <main class="container-main" id="container-main">
-      <div class="container-article-main">
+  <main class="container-main" id="container-main">
+    <section class="container-article-main">
 
         <div class="article-main">
           <h1 class="title-course" >CURSO CSS</h1>
         </div>
         
         <article class="article-main">
-          <a name="css"></a>
+        
           
           
           <h2 class="title-h2">¿Que es css?</h2>
           <p class="parrafo">CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación y el aspecto visual de un documento HTML o XML. Es una tecnología fundamental en el desarrollo web y permite controlar la apariencia de los elementos en una página web, como el color de fondo, el tamaño de la fuente, la disposición de los elementos, los márgenes, el espaciado y muchos otros aspectos visuales.</p>
           
-        <p class="parrafo">
-          CSS trabaja en conjunto con HTML para separar la estructura y el contenido de un documento web de su estilo. Mientras que HTML se encarga de definir los elementos y la estructura de una página web, CSS se utiliza para aplicar estilos y diseñar cómo se mostrarán esos elementos en la pantalla.</p>
-          <a name="agregar-proyecto"></a>
-          <h2 class="title-h2">¿Como lo agrego a mi proyecto?</h2>
+          <p class="parrafo">
+            CSS trabaja en conjunto con HTML para separar la estructura y el contenido de un documento web de su estilo. Mientras que HTML se encarga de definir los elementos y la estructura de una página web, CSS se utiliza para aplicar estilos y diseñar cómo se mostrarán esos elementos en la pantalla.</p>
+            <a name="agregar-proyecto"></a>
+        </article>
+        <article class="article-main">
 
-          <p class="parrafo">En el proyecto donde tengas tu codigo html, por lo general creas una carpeta nueva de nombre styles, dentro de esta carpeta crear un archivo de extension css.</p>
-          <div class="image-initial">
+       
+            <h2 class="title-h2">¿Como lo agrego a mi proyecto?</h2>
 
-            <img  src="assets/agregar_archivo_css.jpg"  height="380px">
-          </div>
+            <p class="parrafo">En el proyecto donde tengas tu codigo html, por lo general creas una carpeta nueva de nombre styles, dentro de esta carpeta crear un archivo de extension css.</p>
+            <div class="image-initial">
+
+              <img  src="assets/agregar_archivo_css.jpg"  height="380px">
+            </div>
 
          
           
@@ -176,7 +178,12 @@
             </pre>
           </div>
 
-          <a name="esctructura"></a>
+        </article>
+
+        <article class="article-main">
+
+        
+
           <h2 class="title-h2">Esctructura CSS</h2>
           <p class="parrafo">Las reglas CSS se utilizan para aplicar estilos a los elementos HTML en una página web. Cada regla CSS consta de dos partes principales: un selector y un bloque de declaración. Aquí tienes la estructura básica de una regla CSS:</p>
 
@@ -242,91 +249,83 @@
           </div>
 
          
-        <p class="parrafo">
-          En este caso, se aplicarían los estilos a todos los elementos <span class="resaltar">&lt;p&gt;</span>, estableciendo el color del texto en rojo, el tamaño de la fuente en 14 píxeles y el margen superior en 10 píxeles.
-        </p>
+            <p class="parrafo">
+              En este caso, se aplicarían los estilos a todos los elementos <span class="resaltar">&lt;p&gt;</span>, estableciendo el color del texto en rojo, el tamaño de la fuente en 14 píxeles y el margen superior en 10 píxeles.
+            </p>
 
-       
-        <h2 class="title-h2">Comentarios En CSS
-        </h2>
+          </article>
 
-        <p class="parrafo">
-          Un comentario de código CSS es una línea o bloque de texto que se utiliza para explicar o documentar partes del código CSS. Estos comentarios no afectan la forma en que se renderiza el sitio web, ya que son ignorados por el navegador.
-        </p>
+          <article class="article-main">
+            <h2 class="title-h2">Comentarios En CSS
+            </h2>
 
-        <p class="parrafo">
-          Los comentarios de CSS son útiles para hacer notas sobre el propósito o la función de ciertas reglas CSS, así como para proporcionar información adicional a otros desarrolladores que pueden trabajar en el mismo código más adelante.
-        </p>
+            <p class="parrafo">
+              Un comentario de código CSS es una línea o bloque de texto que se utiliza para explicar o documentar partes del código CSS. Estos comentarios no afectan la forma en que se renderiza el sitio web, ya que son ignorados por el navegador.
+            </p>
 
-        <p class="parrafo">
-          Hay un tipo de comentarios en CSS:
-        </p>
+            <p class="parrafo">
+              Los comentarios de CSS son útiles para hacer notas sobre el propósito o la función de ciertas reglas CSS, así como para proporcionar información adicional a otros desarrolladores que pueden trabajar en el mismo código más adelante.
+            </p>
 
-        <p class="parrafo">
-          Se inician con <span class="resaltar">/*</span> y se cierran con <span class="resaltar">*/</span>. Todo lo que se encuentra entre estas marcas se considera un comentario y no se ejecutará. Por ejemplo:
-        </p>
+            < class="parrafo">
 
-        <div class="code-only">
-          <pre class="pre-code">
-            <code  class="language-css line-numbers" data-previewers="color time">
-
-                /*
-                Este es un comentario y no
-                será tenido en cuenta por el navegador
-                */
-
-
-                /*Aquí estoy aplicando un estilo a la clase nombre,
-                el color es azul*/
-                .nombre{
-                  color: blue;
-                }
-            </code>
-          </pre>
-        </div>
-        <p class="parrafo">
-          Recuerda que esta es solo una estructura básica, y CSS ofrece muchas más opciones y propiedades para personalizar los estilos de tus elementos HTML.
-        </p>
 
           
-      </article>
+              Hay un tipo de comentarios en CSS:
+            </p>
+
+            <p class="parrafo">
+              Se inician con <span class="resaltar">/*</span> y se cierran con <span class="resaltar">*/</span>. Todo lo que se encuentra entre estas marcas se considera un comentario y no se ejecutará. Por ejemplo:
+            </p>
+
+            <div class="code-only">
+              <pre class="pre-code">
+                <code  class="language-css line-numbers" data-previewers="color time">
+
+                    /*
+                    Este es un comentario y no
+                    será tenido en cuenta por el navegador
+                    */
 
 
-          <footer>
+                    /*Aquí estoy aplicando un estilo a la clase nombre,
+                    el color es azul*/
+                    .nombre{
+                      color: blue;
+                    }
+                </code>
+              </pre>
+            </div>
 
-          </footer>
+
+            <p class="parrafo">
+              Recuerda que esta es solo una estructura básica, y CSS ofrece muchas más opciones y propiedades para personalizar los estilos de tus elementos HTML.
+            </p>
+
           
-        </div>
+        </article>
+    </section>
 
-        <div class="">
 
-        </div>
+          
+          
+
+        
         
 
           
-        <footer>
+      <footer>
         <div class="container-footer-main">
-
-
           <div class="item-footer-main">
             <p class="p-footer-main">Creado por Solu-Informática</p>
-          
           </div>
-
-      
-
-
         </div> 
       </footer>
-    </main>
+  </main>
   
-     <!--  <aside class="aside-right">
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aperiam error tempora fugiat. Ullam totam debitis maxime qui dolore voluptatibus dolor odio ut deserunt, eum provident voluptates amet earum perferendis.</p>
-      </aside> -->
+    
   
-  
-
-    </div>
+</div>
     
     
     
