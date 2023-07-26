@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    
+<link rel="stylesheet" href="/styles/prism_css/prism.css">
+    <link rel="stylesheet" href="../styles/stylemain.css">
+    
+    <title>especificidad</title>
+</head>
+<body>
+<div class="header-main">
+
+  <header class="header-from">
+    <div class="burger-icon" id="burger-icon">
+      <img src="../assets/burger_svg.svg" height="30px">
+    </div>
+
+    <div>ESPECIFICIDAD</div>
+   
+      <ul class="nav-header">
+        <li></li>
+
+      </ul>
+      
+     
+
+
+  </header>
+
+
+  
+</div>
+
+
+
+<div class="container-page-main" id="container-page-main">
+ 
+
+  <aside class="aside-left" id="aside-left">
+    <div class="container-aside-left">
+      
+      <ul class="ul-level-1">
+        <li>
+          <details open>
+            <summary class="summary-left">
+              <div><a href="../index.html">INICIANDO</a></div>
+              <div></div>
+            </summary>
+          </details>
+
+        </li>
+        <li>
+          <details open>
+            <summary class="summary-left">
+
+              <div><a href="../pages/selectors.html">SELECTORES</a></div>
+              
+              
+            </summary>
+             
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="summary-left">
+              <div><a href="../pages/especificidad.html">ESPECIFICIDAD</a></div>
+            </summary>
+              
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="summary-left">
+              <div><a href="#">INICIANDO</a></div>
+            </summary>
+              
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary class="summary-left">
+              <div><a href="#">INICIANDO</a></div>
+            </summary>
+             
+          </details>
+        </li>
+       
+      </ul>
+          
+         <!--  -->
+          
+          
+          
+      
+      </div>
+    </aside>
+    
+  <main class="container-main" id="container-main">
+    <section class="container-article-main">
+
+        
+          <div class="article-main" id="container-title-h1">
+            <h1 class="title-course" >ESPECIFICIDAD</h1>
+          </div>
+        
+        
+        <article class="article-main">
+          
+            <h2 class="title-h2">¿Concepto de sobreescribir?</h2>
+
+            <p class="parrafo">
+            El concepto de que las reglas se sobreescriban en CSS se debe a la forma en que los navegadores aplican los estilos a los elementos HTML y cómo resuelven los conflictos entre las diferentes reglas que se pueden aplicar al mismo elemento. Este proceso se conoce como cascada (cascade) en CSS.
+            </p>
+        
+            <p class="parrafo">La cascada se basa en la especificidad y la procedencia de las reglas. Cuando un navegador renderiza una página web, sigue estos pasos para aplicar los estilos:</p>
+
+            <ul >
+                <li class="li-parrafos">Recopilación de reglas: El navegador recopila todas las reglas CSS que encuentra en los archivos externos, hojas de estilo internas y en línea (definidas directamente en el HTML) que están asociadas con la página.</li>
+                <li class="li-parrafos">
+                    Orden de precedencia: Una vez que se recopilan todas las reglas, el navegador evalúa la especificidad de cada regla para determinar cuál es más específica. La especificidad es lo que decide cuál regla prevalecerá en caso de conflictos.
+                </li>
+                <li class="li-parrafos">
+                    Resolución de conflictos: Si dos o más reglas tienen la misma especificidad, el navegador aplicará la última regla que se definió en el código CSS. Esto se debe a que CSS se lee de arriba a abajo, y la última regla definida tiene prioridad sobre las anteriores.
+                </li>
+            </ul>
+
+            <p class="parrafo">
+                Veamos un ejemplo para ilustrar este proceso:
+            </p>
+
+            <div class="code-only">
+                <pre class="pre-code">
+                  <code  class="language-css line-numbers" data-previewers="color time">
+
+                    p {
+                        color: red;
+                      }
+                      /*ultima regla*/
+                      p {
+                        color: blue;
+                      }
+                      
+                  </code>
+                </pre>
+              </div>
+
+              <div class="code-only">
+                <pre class="pre-code">
+                  <code  class="language-html line-numbers" data-previewers="color time">
+                    &lt;p&gt; Este texto será azul. &lt;/p&gt;
+                  </code>
+                </pre>
+              </div>
+            
+
+              <p class="parrafo">
+                En este caso, el texto del párrafo se mostrará en color azul, ya que la segunda regla tiene la misma especificidad que la primera (selector de tipo), pero se definió más tarde y, por lo tanto, tiene más peso.
+              </p>
+
+              
+        </article>
+
+        <article class="article-main">
+            <h2 class="title-h2">¿Que es especificidad en css?</h2>
+
+          <p class="parrafo"> En CSS, la especificidad es un concepto que determina qué reglas se aplicarán a un elemento HTML cuando existen múltiples reglas que podrían afectarlo. Es decir, cuando hay conflictos entre estilos aplicados a un mismo elemento, la especificidad decide cuál prevalecerá.</p>
+
+          <p class="parrafo">
+            La especificidad se mide en términos de puntos de especificidad, que son valores numéricos asignados a cada tipo de selector en CSS. Cuanto mayor sea el número de puntos de especificidad, más específica será la regla y, por lo tanto, tendrá más prioridad.
+          </p>
+
+          <p class="parrafo">
+            Hay cuatro tipos principales de selectores en CSS y cada uno tiene un valor específico en términos de puntos:
+          </p>
+
+          <ul>
+            <li class="li-parrafos">Selectores universales (*), atributo y pseudo-elementos: Tienen un valor de 0 puntos de especificidad, lo que significa que son los menos específicos.</li>
+            <li class="li-parrafos">Selectores de tipo y pseudo-clases: Tienen un valor de 1 punto de especificidad. Se refieren a elementos HTML específicos, como div, p, a, etc., o a estados particulares de elementos, como :hover o :active.</li>
+            <li class="li-parrafos">Selectores de clase, atributo y pseudo-clases: Tienen un valor de 10 puntos de especificidad. Se refieren a clases o atributos específicos en HTML, como .mi-clase o [type="text"].</li>
+            <li class="li-parrafos">Selectores de ID: Tienen un valor de 100 puntos de especificidad. Se refieren a identificadores únicos en HTML, como #mi-id.</li>
+          </ul>
+
+          <div class="code-only">
+            <pre class="pre-code">
+              <code  class="language-css line-numbers" data-previewers="color time">
+
+                p{color: blue;}                        /* valor especificidad = 0,0,0,1 */
+                h1 li{color: coral;}                   /* valor especificidad = 0,0,0,2 */
+                .micolor{color: aqua;}                 /* valor especificidad = 0,0,1,0 */
+                li.nothin{color: mintcream;}           /* valor especificidad = 0,0,1,1 */
+                h2.fill span.count{color: sienna;}     /* valor especificidad = 0,0,2,2 */
+                #you{color: chocolate;}                /* valor especificidad = 0,1,0,0 */
+                div#dir .far{color: darkgrey;}         /* valor especificidad = 0,1,1,1 */
+              </code>
+            </pre>
+          </div>
+
+          <p class="parrafo">
+            Cuando varios selectores se aplican al mismo elemento, la regla con la mayor especificidad se aplicará. Si dos reglas tienen la misma especificidad, la última definida en el código CSS prevalecerá.
+          </p>
+
+          <p class="parrafo">
+            En Visual Studio Code, si colocas el mouse encima de una regla CSS, te dirá la especificidad.
+          </p>
+
+          <div class="image-initial">
+              <img src="../assets/cursorUp.jpg" height="300px">
+            </div>
+
+        </article>
+
+          <!-- --------------------------------------------- -->
+
+ 
+
+
+
+
+
+
+
+
+          
+          
+    </section>
+
+        <footer>
+            <div class="container-footer-main">
+              <div class="item-footer-main">
+                <p class="p-footer-main">Creado por Solu-Informática</p>
+              </div>
+            </div> 
+        </footer>
+
+
+
+  </main>
+  
+   
+  
+  
+
+</div>
+
+    <script src="/js/prism_js/prism.js"></script>
+    <script src="../js/scriptjsindex.js"></script>
+    
+</body>
+</html>
