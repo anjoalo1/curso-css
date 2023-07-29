@@ -171,6 +171,8 @@ body{
     margin-top: 50px;
     font-size: 4rem;
     font-weight: bold;
+    overflow: auto;
+    
 }
 
 
@@ -183,6 +185,7 @@ body{
     letter-spacing: 2px;
     padding-bottom: 10px;
     transition: 0.5s;
+    hyphens: manual;
 }
 
 .title-h2:hover{
