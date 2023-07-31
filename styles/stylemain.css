@@ -100,13 +100,12 @@ body{
     list-style-type: none;
     text-decoration: none;
     padding: 10px;
-   /*  background-color: rgb(39, 45, 45); */
     margin: 5px 0;
     transition: 0.3s;
+    
 }
 .summary-left:hover{
     background-color: #241218;
-    border: 1px solid white;
 }
 
 
