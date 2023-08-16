@@ -67,7 +67,7 @@ body{
     position:fixed;
     width: 250px; 
     overflow: auto;
-    height: 90vh;
+    height: calc(100vh - 100px);
     padding-top: 50px; 
     grid-column: 1/2;
     background-color: var(--article-main);
@@ -340,4 +340,50 @@ clases para el menu de lado izquierdo
     text-align: center;
     margin-right: 0;
 }
+
+
+/* modal expresion */
+
+.modal{
+display: none;
+ position: fixed;
+ bottom: 0;
+ height: 100vh;
+ width: 100vw;  
+ z-index: -999; 
+ background-color: #3e20296f;
+ margin: 0 auto;
+ 
+}
+
+.into-modal{
+    position: relative;
+    text-align: center;
+}
+
+.modal-visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+ bottom: 0;
+ height: 100vh;
+ width: 100vw;  
+ z-index: 999;
+ background-color: #4a1c1c5f;
+ margin: 0 auto;
+}
+
+.button-close-modal{
+    font-size: 2rem;
+    background-color: red;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image-modal{
+    border: 10px solid red;
+}
+
 
